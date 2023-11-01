@@ -108,7 +108,7 @@ def orthnormal(w, v_list):
         w = group_add(w, v, alpha=-group_product(w, v))
     return normalization(w)
 
-param_layers = ['Linear', 'Bilinear', 'Conv1d', 'Conv2d', 'Conv3d', 'BatchNorm1d', 'BatchNorm2d', 'BatchNorm3d']
+param_layers = ['Linear', 'Bilinear', 'Conv1d', 'Conv2d', 'Conv3d', ''Conv2DTranspose'', 'BatchNorm1d', 'BatchNorm2d', 'BatchNorm3d']
 
 def get_param_layers(model):
     found_layers = []
